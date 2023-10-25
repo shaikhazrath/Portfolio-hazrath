@@ -34,7 +34,6 @@ export default function Home() {
     <main>
       <nav className="flex justify-between px-4 md:px-10 py-4 md:pt-5 items-center">
         <h1 className="md:text-3xl font-semibold uppercase">Sk hazrath</h1>
-        <div className="h-1 w-24 bg-black hidden md:block"></div>
       </nav>
       {/* hero section */}
       <section className="px-4 md:px-16 py-4 md:pt-5">
