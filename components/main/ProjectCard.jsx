@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 
 const ProjectCard = () => {
     return (
-        <Card className="w-[350px] m-2">
+        <Card className="w-[350px]">
             <img src="projectimage.jpg" />
             <CardHeader>
                 <CardTitle>Demo </CardTitle>
