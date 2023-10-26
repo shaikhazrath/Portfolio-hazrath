@@ -12,22 +12,22 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 import { Button } from "@/components/ui/button";
 
-const ProjectCard = () => {
+const ProjectCard = ({p}) => {
     return (
         <Card className="w-[350px] m-2">
-            <img src="projectimage.jpg" />
+            <img src={p.imageurl} />
             <CardHeader>
-                <CardTitle>Demo </CardTitle>
+                <CardTitle>{p.title}</CardTitle>
                 <CardDescription>
-                    MongoDB: A NoSQL database for storing data.
-                    Express.js: A web application framework for building server-side applications.
-                    React: A JavaScript library for creating user interfaces.
-                    Node.js: A runtime environment for executing server-side code.
+                   {p.description}
                 </CardDescription>
             </CardHeader>
 
             <CardFooter className="flex justify-between">
-                <Button>View code  </Button>
+                <Button asChild>
+                    <a href={p.codeurl} > View Code</a>   
+                
+                </Button>
             </CardFooter>
         </Card>
     )
