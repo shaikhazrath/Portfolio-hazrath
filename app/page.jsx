@@ -41,6 +41,7 @@ export default function Home() {
     }
     getData()
 
+
   }, [])
 
 
@@ -67,7 +68,7 @@ export default function Home() {
           {data ? (
             <ul>
               {data.map((item) => (
-                <ProjectCard p={item} />
+                <ProjectCard key={item.$id} p={item} />
               ))}
             </ul>
           ) : (
@@ -101,18 +102,21 @@ export default function Home() {
 
       </section>
       <hr className="my-4 md:my-10" />
-      <div className="flex items-center justify-center gap-5">
+      <div className="flex items-center pb-3 flex-col md:flex-row justify-center gap-2">
         <h1 className="font-light text-sm text-center p-4">Thank you for visiting my portfolio connect with me through
         </h1>
+        <div className="flex gap-4">
         <a href="https://www.instagram.com/shaik.hazrath.ali/">
-          <AiFillInstagram size={15} />
+          <AiFillInstagram size={20} />
         </a>
         <a href="https://www.linkedin.com/in/shaik-hazrath-856349253/">
-          <AiFillLinkedin size={15} />
+          <AiFillLinkedin size={20} />
         </a>
         <a href="https://twitter.com/shaikhazrathali">
-          <RiTwitterXFill size={15} />
+          <RiTwitterXFill size={20} />
         </a>
+        </div>
+     
       </div>
 
 
