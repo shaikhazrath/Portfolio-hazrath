@@ -14,7 +14,7 @@ const ProjectCard = ({p}) => {
     return (
 
         <Card className="w-[350px]">
-            <img src="projectimage.jpg" />
+            <img src={p.imageurl} />
             <CardHeader>
                 <CardTitle>{p.title}</CardTitle>
                 <CardDescription>
