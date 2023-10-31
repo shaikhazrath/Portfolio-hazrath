@@ -64,17 +64,19 @@ export default function Home() {
       {/* projects */}
       <section className="px-4 md:px-10 py-4 md:pt-5">
         <h1 className="text-3xl font-semibold uppercase">Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+   <div className='flex  justify-around '> 
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-28'>
           {data ? (
-            <ul>
               {data.map((item) => (
+              <
                 <ProjectCard key={item.$id} p={item} />
               ))}
-            </ul>
           ) : (
             <p>Loading.....</p>
           )}
         </div>
+        </div>
+                
       </section>
       {/* about */}
       <section className="px-4 md:px-10 py-4 md:pt-5">
